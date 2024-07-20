@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Fixed</title>
+
+    <style>
+
+    </style>
+</head>
+<body style="height: 3000px;">
+<!-- Exercise 14a -->
+    <div style="position: relative;
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding: 2px 2px 2px 2px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 3;">
+        bottom-right
+    </div>
+
+<!-- Exercise 14b -->
+    <div style="background-color: green;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    padding-right: 20px;
+    color: white;
+    z-index: 2;">
+    right sidebar
+</div>
+
+<!-- Exercise 14c -->
+
+    <div style="background-color: bla
+    top: 0;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    position: fixed;">
+    </div>
+
+<!-- Exercise 14 -->
+    <div style="background-color: green;
+        position: fixed;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+        color: white;
+        z-index: 2;">
+    right sidebar
+    </div>
+
+    <div class="overlay" style="  background-color: rgba(0, 0, 0, 0.5);
+                        position: fixed;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;">
+            <div class="model" style="  background-color: white;
+                                width: 300px;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                                border-radius: 5px;">
+                <div class="header" style=" background-color: white;
+                font-family: Arial;
+                  font-weight: bold;
+                  font-size: 24px;
+                  margin-bottom: 12px;">Model Title</div>
+<div class="title" style="  font-family: Arial;
+                   margin-bottom: 12px;">
+                   This is a model</div>
+            </div>
+        <button>close</button>
+    </div>
+
+</body>
+</html>

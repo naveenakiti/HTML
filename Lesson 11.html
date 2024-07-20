@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0; 
+        }
+        .cat {
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+            margin-bottom: 12px;
+        }
+        .title2 {
+            font-weight: bold;
+            color: black;
+            margin-left: 8px;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .mutual {
+            display: inline-block;
+            vertical-align: middle;
+            color: rgb(100, 100, 100);
+        }
+        .add-friend {
+            background-color: rgb(113, 111, 249);
+            color: white;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 6px;
+        }
+        .cat-card {
+            width: 200px;
+            height: 335px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }   
+        .profile {
+            height: 28px;
+            width: 28px;
+            object-fit: cover;
+            border-radius: 14px;
+            vertical-align: middle;
+            margin-right: 4px;
+        } 
+        .Mutual-Profile {
+            margin-left: 8px;
+            margin-bottom: 10px;
+        }
+        .Grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<!--Exercise 11a-->
+    <div style="display: grid;
+    grid-template-columns: 200px 75px;">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+<br >
+<br >
+<br >
+<!--Exercise 11b-->
+    <div style="display: grid;
+    grid-template-columns: 50px 1fr 75px;">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+    </div>
+<br >
+<br >
+<br >
+<!--Exercise 11c-->
+    <div style="display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 20px; row-gap: 10px;">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+    </div>
+<br >
+<br >
+<br >
+<!--Exercise 11d-->
+
+    <div class="Grid">
+        <div class="cat-card">
+            <div>
+                <img class="cat" src="cats/cat-1.jfif">
+                <p class="title2">Oliver</p>
+            </div>
+            <div class="Mutual-Profile">
+                <img class="profile" src="cats/catp.jfif">
+                <p class="mutual">2 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-friend">Add Friend</button>
+            </div> 
+        </div>
+        <div class="cat-card">
+            <div>
+                <img class="cat" src="cats/cat-2.jfif">
+                <p class="title2">Mimi</p>
+            </div>
+            <div class="Mutual-Profile">
+                <img class="profile" src="cats/catp.jfif">
+                <p class="mutual">5 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-friend">Add Friend</button>
+            </div> 
+        </div>
+        <div class="cat-card">
+            <div>
+                <img class="cat" src="cats/cat-3.jfif">
+                <p class="title2">Rex</p>
+            </div>
+            <div class="Mutual-Profile">
+                <img class="profile" src="cats/catp.jfif">
+                <p class="mutual">8 mutual friends</p>
+            </div>
+            <div>
+                <button class="add-friend">Add Friend</button>
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

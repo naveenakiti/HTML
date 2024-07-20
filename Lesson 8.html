@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display & Inline Block</title>
+
+    <style>
+        .full {
+            padding-bottom: 500px;
+        }
+        .name, .email {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .button-para {
+            width: 200px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .search-bar {
+            width: 500px;
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-top: 0;
+            border: none;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2)
+        }
+        .google {
+            width: 200px;
+            display: block;
+            margin-left: 150px;
+            margin-bottom: 0px;
+            
+        }
+        .FN1, .FN2,.e2 {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(200, 200, 200);
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 16px;
+            padding-right: 16px;
+            font-size: 16px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+        .e2 {
+            display: block;
+            width: 333px;
+        }
+        .FN1, .FN2 {
+            width: 148px;
+        }
+        .Sign {
+            background-color: rgb(47, 127, 231);
+            color: white;
+            border: none;
+            width: 366px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px; 
+        }
+        .request {
+            font-size: 40px;
+            font-family: Arial;
+            font-weight: bold;
+            color: black;
+            margin-bottom: 25px;
+        }
+        input {
+            display: block;
+            background-color: rgb(240, 240, 240);
+            border: none;
+            margin-bottom: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 16px;
+            width: 400px;
+        }
+        .request-now{
+            background-color: black;
+            color: white;
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .schedule {
+            background-color: rgb(240, 240, 240);
+            border: none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+            transition: background-color 0.15s, color 0.15s;
+        }
+        .schedule:hover {
+            background-color: rgb(239, 194, 194);
+            opacity: 0.6;
+        }
+        .schedule:active {
+            background-color: rgb(211, 82, 82);
+            opacity: 0.5;
+        }
+        .request-now:hover {
+            background-color: rgb(115, 136, 144);
+            opacity: 0.6;
+            color: black;
+        }
+        .request-now:active {
+            background-color: rgb(88, 81, 81);
+            opacity: 0.5;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <!-- Exercise 8a-->
+        <input class="name" type="text" placeholder="Name">
+        <input class="email" type="text" placeholder="Email">
+        <br >
+        <br >
+
+        <!-- Exercise 8b-->
+
+                <p class="button-para">
+                    Thanks for chatting with our customer support. Would you like
+                    to take our quick survey? 
+                </p>
+                <button>Yes</button>
+                <button>No</button>
+        <br >
+        <br >
+                
+        <!-- Exercise 8c-->
+        <img class="google" src="cats/google.png">
+        <input class="search-bar" type="text" 
+        placeholder="Search Google or type a URL">
+        <br >
+        <br >
+        <br >
+        <br >
+                
+        <!-- Exercise 8d-->
+            <input class="FN1" type="text" placeholder="First name">
+            <input class="FN2" type="text" placeholder="Last name">
+            <input class="e2" type="text" placeholder="Emial">
+            <button class="Sign">Sign Up</button>
+        <br >
+        <br >
+        <br >
+        <br >
+            
+        <!-- Exercise 8e-->
+                <p class="request">
+                    Request a ride now
+                </p>
+                <input class="pickup" type="text" placeholder="Enter pickup location">
+                <input class="destination" type="text" placeholder="Enter destination">
+                <button class="request-now">Request</button>
+                <button class="schedule">Schedule for later</button>
+    </div>
+</body>
+</html>

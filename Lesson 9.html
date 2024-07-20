@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The <div> Element</title>
+
+    <style>
+        .full {
+            padding-bottom: 500px;
+        }
+        .red-square {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .circle {
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border-radius: 50px;
+        }
+        .title {
+            font-family: Arial;
+        }
+        .card {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(150, 150, 150);
+            width: 300px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+        p {
+            font-family: Arial;
+        }
+        .grey-card {
+            width: 380px;
+            padding-left: 15px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: rgb(87, 86, 86);
+        }
+        .music {
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .add {
+            font-size: 16px;
+            color: rgb(161, 158, 158);
+        }
+        .tweet-cat {
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .happen {
+            font-size: 18px;
+            border: none;
+            width: 300px;
+            vertical-align: middle;
+        }
+        .Tweet {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            border: none;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        .twitter {
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(150, 150, 150);
+            width: 470px;
+            padding-left: 15px;
+            padding-bottom: 20px;
+            padding-top: 20px; 
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3)
+        }
+        .cat {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
+            object-position: cover;
+        }
+        .title2 {
+            font-weight: bold;
+            color: black;
+            margin-left: 6px;
+            margin-top: 8px;
+            margin-bottom: 0;
+        }
+        .mutual {
+            color: grey;
+            margin-left: 6px;
+            margin-top: 5px;
+        }
+        .add-friend {
+            background-color: rgb(113, 111, 249);
+            color: white;
+            font-size: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 6px;
+        }
+        .cat-card {
+            width: 150px;
+            height: 270px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .search-bar {
+            width: 500px;
+            padding-left: 10px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 25px;
+            font-size: 16px;
+            margin-top: 0;
+            border: none;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+
+        }
+        .google {
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px; 
+        }
+        .google-button {
+            background-color: rgb(245, 245, 245);
+            border: none;
+            font-size: 15px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .search-button {
+            margin-right: 10px;
+        }
+        .GC {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="full">
+        <!--Exercise 9a-->
+        <div class="red-square"></div>
+        <br >
+        <br >
+         <!--Exercise 9b-->
+        <div class="circle"></div>
+        <br >
+        <br >
+        <!--Exercise 9c-->
+         <div class="card">
+            <p class="title">
+                Satisfied with our service?
+             </p>
+             <button class="yes">Yes</button>
+             <button class="no">No</button>    
+         </div>
+        <br >
+        <br >
+        <!--Exercise 9d-->
+          <div class="grey-card">
+            <p class="music">
+                Install YouTube Music
+            </p>
+            <p class="add">
+                Add YouTube Music to your desktop for quick and easy access
+            </p>
+          </div>
+        <br >
+        <br >
+        <!--Exercise 9e-->
+           <div class="twitter">
+                <img class="tweet-cat" src="cats/cat-1.jfif">
+                <input class="happen" type="text" placeholder="What's happening?">
+                <button class="Tweet">Tweet</button>
+            </div>
+        <br >
+        <br >
+        <!--Exercise 9f-->
+            <div class="cat-card">
+                <img class="cat" src="cats/cat-1.jfif">
+                <p class="title2">Oliver</p>
+                <p class="mutual">2 mutual friends</p>
+                <button class="add-friend">Add Friend</button>
+            </div>
+        <br >
+        <br >
+        <!--Exercise 9g-->
+            <div class="cat-card">
+                <img class="cat" src="cats/cat-1.jfif">
+                <p class="title2">Oliver</p>
+                <p class="mutual">2 mutual friends</p>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="cat-card">
+                <img class="cat" src="cats/cat-2.jfif">
+                <p class="title2">Mimi</p>
+                <p class="mutual">5 mutual friends</p>
+                <button class="add-friend">Add Friend</button>
+            </div>
+            <div class="cat-card">
+                <img class="cat" src="cats/cat-3.jfif">
+                <p class="title2">Rex</p>
+                <p class="mutual">4 mutual friends</p>
+                <button class="add-friend">Add Friend</button>
+            </div>
+        <br >
+        <br >
+        <!--Exercise 9h-->
+        <div class="GC">
+            <div>
+                <img class="google" src="cats/google.png">
+            </div>
+            <div>
+                <input class="search-bar" type="text" 
+                placeholder="Search Google or type a URL">
+            </div>
+            <div>
+                <button class="google-button search-button">Google Search</button>
+                <button class="google-button">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

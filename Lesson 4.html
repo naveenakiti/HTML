@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        .Subscribe-button {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border: none;
+            border-radius: 2px;
+            height: 36px;
+            width: 105px;
+            cursor: pointer;
+            transition: opacity 1s;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .Join-button {
+            background-color: white;
+            color: blue;
+            font-weight: bold;
+            font-size: 15px;
+            border-color: blue;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 2px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            cursor: pointer;
+            margin: 8px;
+            vertical-align: bottom;
+            transition: opacity 1s;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .Tweet-button {
+            background-color: rgb(69, 18, 220);
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            border-radius: 18px;
+            border: none;
+            height: 36px;
+            width: 105px;
+            cursor: pointer;
+            margin: 6px;
+            transition: opacity 1s;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .Subscribe-button:hover {
+            background-color: rgb(110, 3, 14);
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+        }
+        .Subscribe-button:active {
+            background-color: rgb(198, 9, 19);
+            opacity: 0.5;
+        }
+        .Join-button:hover {
+            background-color: rgb(22, 25, 208);
+            color: white;
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+        }
+        .Join-button:active {
+            background-color: rgb(22, 156, 190);
+            color: white;
+            opacity: 0.5;
+        }
+        .Tweet-button:hover {
+            background-color: rgb(43, 98, 149);
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);    
+        }
+        .Tweet-button:active {
+            background-color: rgb(69, 108, 157);
+            opacity: 0.5;
+        }
+        .stretch-button {
+            background-color: rgb(240, 7, 7);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            padding-right: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opasity 1s;
+            transform: background-color 0.2s, color 0.8s;
+            transition: padding 0.8s, margin 0.2s;
+        }
+        .stretch-button:hover {
+            background-color: rgb(110, 3, 14);
+            opacity: 0.8;
+            color: white;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .stretch-button:active {
+            background-color: rgb(110, 3, 14);
+            opacity: 0.5;
+        }
+        .back-button {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 20px;
+            margin-right: 15px;
+            background-color: bisque;
+            border: crimson;
+            border-style: outset;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: brown;
+            cursor: pointer;
+            transition: opasity 1s;
+            transform: background-color 0.2s, color 0.8s;
+            transition: padding 0.8s, margin 0.2s;
+        }
+        .search-result {
+            margin-left: 4px;
+            margin-right: 4px;
+            font-size: 18px;
+            color: brown;
+        }
+        .next-button {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 20px;
+            margin-right: 15px;
+            background-color: bisque;
+            border: crimson;
+            border-style: outset;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: brown;
+            cursor: pointer;
+            transition: opasity 1s;
+            transform: background-color 0.2s, color 0.8s;
+            transition: padding 0.8s, margin 0.2s;
+        }
+        .search-result {
+            border-radius: 20px;
+        }
+        .back-button:hover {
+            background-color: rgb(241, 177, 99);
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .back-button:active {
+            background-color: rgb(197, 161, 118);
+            opacity: 0.5;
+        }
+        .next-button:hover {
+            background-color: rgb(241, 177, 99);
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .next-button:active {
+            background-color: rgb(197, 161, 118);
+            opacity: 0.8;
+        }
+        .search-result:hover {
+            background-color: rgb(227, 183, 122);
+            opacity: 0.8;
+            box-shadow: 10px 10px 10px rgba(16, 12, 12, 0.6);
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .St-button {
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            cursor: pointer;
+            transition: padding-top 1s, padding-bottom 1s,
+            padding-right 1s, padding-left 1s;
+        }
+        .St-button:hover {
+            padding-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .St-button:active {
+            opacity: 0.5;
+        }
+        .shadow-button {
+            background-color: green;
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            cursor: pointer;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+        .shadow-button:hover {
+            margin-top: 3px;
+            margin-left: 3px;
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body>
+          <button class="Subscribe-button">SUBSCRIBE</button>
+          <button class="Join-button">JOIN</button>
+          <button class="Tweet-button">TWEET</button>
+          <br >
+          <br >
+          <br >
+          <button class="stretch-button">One</button>
+          <button class="stretch-button">Two</button>
+          <button class="stretch-button">Three</button>
+          <br >
+          <br >
+          <br >
+          <button class="back-button">Back</button>
+          <a class="search-result" href="https://www.google.com/" target="_blank">1</a>
+          <a class="search-result" href="https://web.whatsapp.com/" target="_blank">2</a>
+          <a class="search-result" href="https://www.youtube.com/" target="_blank">3</a>
+          <a class="search-result" href="https://www.ilovepdf.com/pdf_to_word" target="_blank">4</a>
+          <a class="search-result" href="https://www.ilovepdf.com/word_to_pdf" target="_blank">5</a>
+          <button class="next-button">Next</button>
+          <br >
+          <br >
+          <br >
+          <button class="St-button">Stretch</button>
+          <br >
+          <br >
+          <br >
+          <button class="shadow-button">Shadow</button>
+</body>
+</html>
